@@ -1,0 +1,1 @@
+create table JOBS (ID varchar(50) not null, TIMESTAMP datetime not null)
