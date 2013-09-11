@@ -73,7 +73,7 @@ public class JobCache {
     }
     
     private void addProcessed(Job job) {
-    	if (processed.size() > Configuration.getInstance().getIntValue("profile.job.cache", 1000));
+    	if (processed.size() > Configuration.getInstance().getIntValue("profile.job.cache", 1000))
     		dao.remove(processed.remove(0));
     	dao.add(job);
     	processed.add(job);
